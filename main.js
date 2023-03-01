@@ -1,11 +1,11 @@
 const main = document.querySelectorAll(".about");
 const about = document.querySelectorAll(".about__card");
 
-window.onload = function() {
+window.onload = function () {
   const image = document.querySelector(".hero__image");
-  const text = document.querySelector(".flo"); 
+  const text = document.querySelector(".flo");
   image.classList.toggle("imgIn");
-}
+};
 
 let options = {
   threshold: 0.1,
@@ -16,15 +16,15 @@ let optionsTwo = {
 
 let observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if(entry.isIntersecting){
-      const title = entry.target.querySelector('h1');
+    if (entry.isIntersecting) {
+      const title = entry.target.querySelector("h1");
       const line = entry.target.querySelector(".about__underline");
       const paragraph = entry.target.querySelectorAll(".about__paragraph");
-      title.classList.toggle('pop');
+      title.classList.toggle("pop");
       line.classList.toggle("slideIn");
-      paragraph.forEach(el => el.classList.toggle("pop"));
+      paragraph.forEach((el) => el.classList.toggle("pop"));
       observer.unobserve(entry.target);
-    }   
+    }
   });
 }, options);
 
@@ -34,7 +34,6 @@ let observerTwo = new IntersectionObserver((entries) => {
       document.querySelector(".about__work h1").style.opacity = 1;
       const svg = entry.target.querySelector("img");
       svg.classList.toggle("svgIn");
-      
 
       observerTwo.unobserve(entry.target);
     }

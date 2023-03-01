@@ -84,7 +84,7 @@ strong {
 /** header styles **/
 
 .floting-text {
-  opacity: .8;
+  opacity: 0.8;
   margin-left: -5.4rem;
   position: absolute;
   left: 6%;
@@ -141,10 +141,10 @@ strong {
 .hero__paragraph {
   margin: 2.1rem 0;
 }
-@media (min-width: 600px){
-    .hero__paragraph::after{
-    content: 'Specialized in javascript, web scraping and reverse engineering.';
-}
+@media (min-width: 600px) {
+  .hero__paragraph::after {
+    content: "Specialized in javascript, web scraping and reverse engineering.";
+  }
 }
 .hero__bold {
   font-weight: 800;
@@ -204,7 +204,7 @@ strong {
   align-items: center;
   border-bottom: 0.7px solid #2f1f49;
 }
-.about__card img{
+.about__card img {
   opacity: 0;
 }
 .card__info {
@@ -214,8 +214,8 @@ strong {
   letter-spacing: 0.02em;
   margin: 1.4rem 0;
 }
-.card__info .card__icon{ 
-  opacity: .6;
+.card__info .card__icon {
+  opacity: 0.6;
   width: 2.4rem;
 }
 /** footer styles **/
@@ -242,7 +242,7 @@ strong {
   font-weight: 600;
   font-size: 2.1rem;
 }
-.form__heading img{
+.form__heading img {
   margin-left: 1rem;
   width: 3rem;
 }
@@ -290,7 +290,6 @@ input {
   background-color: #2f1f49f5;
 }
 
-
 /** social icon animation **/
 
 .animate-social {
@@ -325,13 +324,10 @@ input {
 
 /** opacity animation **/
 
-.animate-opacity{
-  animation: opacity .35s linear forwards;
+.animate-opacity {
+  animation: opacity 0.35s linear forwards;
   animation-delay: var(--delay);
-
 }
-
-
 
 /** MOBILE LAYOUT **/
 @media (max-width: 600px) {
@@ -349,11 +345,11 @@ input {
   .about__paragraph {
     width: 100%;
   }
-  .nav{
+  .nav {
     position: absolute;
   }
   .nav__logo {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .nav__link {
     visibility: hidden;
@@ -419,10 +415,10 @@ input {
   .form__heading {
     font-size: 1.8rem;
   }
-  .form__heading img{
+  .form__heading img {
     width: 2.5rem;
   }
-  .float__wrapper{
+  .float__wrapper {
     opacity: 0;
   }
   .floting-text {
@@ -432,19 +428,16 @@ input {
   }
   .floting-line {
     height: 6rem;
-    bottom: .5rem;
+    bottom: 0.5rem;
   }
 
-
- /** mob animation mods **/
+  /** mob animation mods **/
 
   .slideIn {
-  animation: slideIn .4s ease-in-out forwards;
-  animation-delay: var(--delay);
+    animation: slideIn 0.4s ease-in-out forwards;
+    animation-delay: var(--delay);
+  }
 }
-  
-}
-
 
 /** ANIMATIONS KEYFRAMES **/
 
@@ -497,13 +490,12 @@ input {
 }
 
 @keyframes opacity {
-  from{
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
-  
 }
 
 @keyframes svgpop {
